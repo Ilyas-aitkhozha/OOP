@@ -10,7 +10,7 @@ public class StarTriangle {
 
         for (int i = 1; i <= width; i++) {
             for (int j = 1; j <= i; j++) {
-                result += "*";
+                result += "[*]";
             }
             result += "\n";
         }

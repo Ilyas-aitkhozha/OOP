@@ -5,7 +5,7 @@ public class Student {
     private String name;
     private int id;
     private int year_of_study;
-    public Student(String name, int id){
+    public Student( int id, String name){
         this.name = name;
         this.id = id;
         this.year_of_study = 1;
@@ -21,5 +21,8 @@ public class Student {
     }
     public void incYear_of_study(){
         year_of_study++;
+    }
+    public String toString() {
+        return "Student " + name + ", id: " + id;
     }
 }

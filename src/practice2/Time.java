@@ -4,16 +4,13 @@ public class Time {
     private int hour;
     private int minute;
     private int second;
-    private int []time;
 
     public Time(int hour, int minute, int second){
         setTime(hour, minute, second);
     }
     public void setTime(int hour, int minute, int second) {
-        if (hour <= 0  || hour >= 23 || minute <= 0 || minute >= 59 || second <= 0 || second >= 59) {
-            this.hour = hour;
-            this.minute = minute;
-            this.second = second;
+        if (hour < 0  || hour > 23 || minute < 0 || minute > 59 || second < 0 || second > 59) {
+            System.out.println("Invalid");
         }
         else{
             this.hour = hour;
@@ -27,6 +24,8 @@ public class Time {
     public String toStandard() {
         int stdHour = hour % 12;
         if (stdHour == 0) {
+
+
             stdHour = 12;
         }
         String period = (hour < 12) ? "AM":"PM";
