@@ -25,7 +25,7 @@ public class BankAccount {
 
     public void deposit(double amount, String comment) {
         balance += amount;
-        System.out.println("Deposit comment: " + comment);
+        System.out.println(" (" + ownerName + "): " + "Deposit comment: " + comment);
     }
 
     public int getAccountId() {
