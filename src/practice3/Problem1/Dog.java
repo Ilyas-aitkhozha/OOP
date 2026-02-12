@@ -1,4 +1,4 @@
-package practice3;
+package practice3.Problem1;
 
 public class Dog extends Animal {
 
