@@ -9,7 +9,7 @@ public class Test {
 		dl.kidnap(new Person("A", Gender.GIRL));
 		dl.kidnap(new Person("E", Gender.BOY));
 		dl.kidnap(new Person("F", Gender.GIRL));
-		//dl.kidnap(new Person("S", Gender.GIRL));
+		dl.kidnap(new Person("S", Gender.GIRL));
 		//dl.kidnap(new Person("Z", Gender.BOY));
 		dl.show();
 		
