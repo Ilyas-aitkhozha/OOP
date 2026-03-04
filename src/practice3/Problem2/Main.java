@@ -24,6 +24,10 @@ public class Main {
                 System.out.print("Choose type: ");
                 int type = sc.nextInt();
                 sc.nextLine();
+                if (type != 1 && type != 2 && type != 3) {
+                    System.out.println("no choose 1, 2 or 3.");
+                    continue;
+                }
                 System.out.print("Name: ");
                 String name = sc.nextLine();
                 System.out.print("Address: ");
@@ -51,7 +55,6 @@ public class Main {
                     System.out.print("Pay: ");
                     double pay = sc.nextDouble();
                     sc.nextLine();
-
                     Staff st = new Staff(name, address, school, pay);
                     people.add(st);
                 }
@@ -60,6 +63,9 @@ public class Main {
                 for (int i = 0; i < people.size(); i++) {
                     System.out.println(people.get(i));
                 }
+            }
+            if (choice != 0 && choice != 1 && choice != 2) {
+                System.out.println("bad choise, only 0, 1 or 2.");
             }
         }
         sc.close();
